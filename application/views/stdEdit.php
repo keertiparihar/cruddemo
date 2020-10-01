@@ -71,39 +71,37 @@ a {
 </style>
 
 
-<form method="post" action="<?= base_url();?>Student/stdUpdate">
-  <table align="center" border="2">
-    <tbody>
-  <div class="col-md-4">
-  <div class="container">
-   
-    <h1 align="center">Student Updates Form</h1>
-    
-    <hr>
-   <tr>
-    <td><label for="stdName"><b>Name</b></label></td>
-    <td> <input type="text" placeholder="Enter Name" name="stdName" id="stdName" value="<?= $std['stdName'];?>" required> </td>
-</tr>
-     <tr>
-    <td><label for="stdClass"><b>Class</b></label></td>
-    <td><input type="text" placeholder="Enter Class" name="stdClass" id="stdClass" value="<?= $std['stdClass'];?>" required></td></tr>
-
-    <tr>
-    <td><label for="stdPercentage"><b>Percentage</b></label></td>
-    <td><input type="text" placeholder="Enter Percentage" name="stdPercentage" id="stdPercentage" value="<?= $std['stdPercentage'];?>" required></td></tr>
-  
-
-    <tr>
-    <td colspan="2">
-      <!-- <button align="center"  type="submit" name="submit" class="registerbtn">Register</button> -->
-      <input type="hidden" name="stdId" value="<?= $std['id'];?>">
-      <input type="submit" name="Update" value="Update" class="registerbtn">
-      <input type="reset" name="reset" value="Reset" class="resetbtn">
-    </td></tr>
-</div>
-</div>
-</tbody>
-</table>
-</form>
-
+  <form method="post" action="<?= base_url();?>Student/stdUpdate">
+    <table align="center" border="2">
+      <tbody>
+        <div class="col-md-4">
+          <div class="container">
+     
+            <h1 align="center">Student Updates Form</h1>
+            
+            <hr>
+            <tr>
+              <td><label for="stdName"><b>Name</b></label></td>
+              <td> <input type="text" placeholder="Enter Name" name="stdName" id="stdName" value="<?= $std['stdName'];?>" required> </td>
+            </tr>
+            <tr>
+              <td><label for="stdClass"><b>Class</b></label></td>
+              <td><input type="text" placeholder="Enter Class" name="stdClass" id="stdClass" value="<?= $std['stdClass'];?>" required></td>
+            </tr>
+            <tr>
+              <td><label for="stdPercentage"><b>Percentage</b></label></td>
+              <td><input type="text" placeholder="Enter Percentage" name="stdPercentage" id="stdPercentage" value="<?= $std['stdPercentage'];?>" required></td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <input type="hidden" name="stdId" value="<?= $std['id'];?>">
+                <input type="submit" name="Update" value="Update" class="registerbtn">
+                <input type="reset" name="reset" value="Reset" class="resetbtn">
+              </td>
+            </tr>
+          </div>
+        </div>
+      </tbody>
+    </table>
+  </form>
 </html>

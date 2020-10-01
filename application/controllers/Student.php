@@ -1,4 +1,5 @@
-<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+<?php  
+if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
 class Student extends CI_Controller{
 
@@ -13,14 +14,13 @@ class Student extends CI_Controller{
 	public function index()
 	{
 		$this->load->model('StudentModel','stdModel',true);
-
 		$data['std'] = $this->StudentModel->getList();
 		$this->load->view('studentForm',$data);
 		$this->load->view('stdList',$data);
 	}
 
 	/**
-	*Save
+	*Save Function
 	*/
 
 	public function stdSave()
@@ -38,9 +38,8 @@ class Student extends CI_Controller{
 	}
 
 	/**
-	Edit
+	Edit Function
 	*/
-
 
 	public function stdEdit($id = null)
 	{
@@ -50,7 +49,7 @@ class Student extends CI_Controller{
 	}
 
 	/**
-	Update
+	Update Function
 	*/ 
 
 	public function stdUpdate()
@@ -78,7 +77,7 @@ class Student extends CI_Controller{
 	}
 
 	/**
-	*Delete
+	*Delete Function
 	*/
 
 	public function stdDelete($id)

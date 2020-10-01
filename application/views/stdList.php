@@ -87,7 +87,7 @@
 			<?php
 				if(isset($std) && is_array($std) && count($std))
 				{
-					$sr = 1;
+					$sn = 1;
 					foreach($std as $row)
 					{
 						$id         = $row->id;
@@ -96,7 +96,7 @@
 						<tr id="recordId-<?=$id;?>">
 
 							
-					  		<td><?php echo $sr; ?></td>
+					  		<td><?php echo $sn; ?></td>
 					        <td><?php echo $row->stdName; ?></td>
 					        <td><?php echo $row->stdClass; ?></td>
 					        <td><?php echo $row->stdPercentage; ?></td>
@@ -112,7 +112,7 @@
 							</td>
 						</tr>
 				<?php
-					$sr++;
+					$sn++;
 					}
 				}
 			?>
